@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+*{box-sizing: border-box;margin: 0; padding: 0; user-select: none;}
+ul{ list-style: none;}
+body{background-color: rgb(245, 245, 245); font-family: "Rubik", sans-serif;}
+a{text-decoration: none; color: black;}
+p, a, li,button, select, input{font-size: clamp(14px, 2vh ,20px); font-weight: 200;}
+html, body {
+  height: 100%;
+}
+.container{
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 15px;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex: 1;
+}
+/* Главная страница */
+header{
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul{display: flex; gap: 20px; align-items: center;}
+header nav ul li:nth-child(2){
+    background-color: #FFCC33;
+    padding: 10px;
+    border-radius: 50px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+header nav ul li:nth-child(2):hover{
+    background-color: #e8b007;
+    transition: all 0.2s ease;
+}
+header nav ul li:nth-child( 1){
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 10px;
+    transition: all 0.2s ease;
+    background-color: #e7e7e7;
+}
+header nav ul li:nth-child(1):hover{
+    background-color: #FFCC33;
+    transition: all 0.2s ease;
+}
+header nav p{ line-height: 20px;}
+.promo{height: 500px; background-color: #FFCC33;}
+.promo_img{
+    width: clamp(200px, 50%, 600px);
+    position: absolute;
+    right: 0;
+    margin-right: 120px;
+    margin-top: 30px;
+}
+.promo_titles{
+    font-size: clamp(20px, 4vh, 50px);
+    padding-top: 120px;
+    line-height: 70px;
+}
+.second h1{
+    padding-top: 120px;
+    font-weight: 200;
+}
+footer{
+    background-color: #d57937;
+    height: 20px;
+}
+footer p{
+    font-size: 14px;
+}
+.back{
+    color: #d57937;
+    padding-top: 20px;
+    display: block;
+}
+form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: clamp(300px, 50%, 500px);
+    row-gap: 15px;
+    background-color: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 40px 0px rgba(213, 213, 213, 0.259);
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+form p, small{
+    font-weight: 200;
+}
+select{
+    outline: none;
+    font-weight: 200;
+    padding: 5px;
+}
+option{
+    font-weight: 200;
+}
+input{
+    outline: none;
+    padding: 5px;
+    border: none;
+    border-bottom: 1px solid #898989;
+    background: none;
+    color: rgb(92, 92, 92);
+}
+button{
+    width: clamp(200px, 50%, 500px);
+    outline: none;
+    background-color: #ececec;
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #FFCC33;
+    transform: scale(1.1);
+    transition: all 0.2s ease;
+}
+.title{
+    padding: 60px 0 60px 0;
+}
+.application{
+    background-color: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 40px 0px rgba(213, 213, 213, 0.259);
+    margin-bottom: 30px;
+}
+.line{
+    border: 1px solid #FFCC33;
+    margin: 10px 0 10px 0;
+}
+.app_block{
+    overflow-y: auto;
+    max-height: 900px;
+    padding: 10px;
+}
+.two{
+    max-height: 600px;
+}
+.title_adm{
+    font-weight: bold;
+    padding: 10px 0px 10px 0px;
+    border-bottom: 1px solid hsl(0, 0%, 89%);
+    margin-bottom: 10px;
+}
